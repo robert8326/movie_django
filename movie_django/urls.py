@@ -7,6 +7,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('ckeditor/', include('django.contrib.flatpages.urls')),
     path('', include('movies.urls'))
 ]
 
