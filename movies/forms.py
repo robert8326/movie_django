@@ -17,6 +17,7 @@ class ReviewForm(forms.ModelForm):
             "text": forms.Textarea(attrs={"class": "form-control border"})
         }
 
+
 class RatingForm(forms.ModelForm):
     """Форма добавления рейтинга"""
     star = forms.ModelChoiceField(
