@@ -97,6 +97,12 @@ class ActorAdmin(admin.ModelAdmin):
     get_image.short_descriptipon = 'Изображение'
 
 
+@admin.register(Rating)
+class RatingAdmin(admin.ModelAdmin):
+    """Рейтинг"""
+    list_display = ('star', 'movie', 'ip')
+
+
 @admin.register(MovieShots)
 class MovieShotsAdmin(admin.ModelAdmin):
     list_display = ('title', 'movie', 'get_image')
@@ -114,7 +120,7 @@ admin.site.register(Genre)
 # admin.site.register(Movie)
 # admin.site.register(MovieShots)
 admin.site.register(RatingStar)
-admin.site.register(Rating)
+# admin.site.register(Rating)
 # admin.site.register(Reviews)
 
 # admin.site.site.title = 'Django Movies'
