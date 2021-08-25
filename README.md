@@ -1,1 +1,1 @@
-# movie_django_drf
+# movie_django
